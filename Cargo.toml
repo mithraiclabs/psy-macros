@@ -1,0 +1,18 @@
+[package]
+name = "psy-macros"
+version = "1.0.0"
+edition = "2018"
+
+description = "A fork of jet-proto-macros. Library of proc macros for anchor programs"
+license = "AGPL-3.0-or-later"
+homepage = "https://www.psyoptions.io"
+repository = "https://github.com/mithraiclabs/psy-macros"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn = {version="1.0.57",features=["full","fold"]}
+quote = "1.0.8"
+static_assertions = "1.1.0"
+proc-macro2 = "1.0"
